@@ -1,17 +1,24 @@
+// index.html
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Interactive Bubble Diagram</title>
+    <title>Interactive Bubble Physics</title>
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
-    <div id="controls">
-        <button onclick="addBubble()">Add Bubble</button>
-        <button onclick="exportDiagram()">Export as PNG</button>
+    <div class="container">
+        <div class="controls">
+            <button onclick="addBubble()">Add Bubble</button>
+            <button onclick="exportDiagram()">Export as PNG</button>
+        </div>
+        <canvas id="canvas"></canvas>
+        <div class="instructions">
+            <p>Click and drag to move bubbles</p>
+            <p>Long press on a bubble to create a connected bubble</p>
+        </div>
     </div>
-    <canvas id="canvas"></canvas>
     <script src="script.js"></script>
 </body>
 </html>
